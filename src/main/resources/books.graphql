@@ -1,0 +1,23 @@
+schema{
+ query: Query
+ mutation: Mutation
+}
+
+type Query{
+	allBooks: [Book]
+	book(id: String) : Book
+}
+
+type Mutation {
+   addBook_returns_object(isn:ID,title:String,publisher:String):Book
+   createBook(isn:String,title:String,publisher:String):String
+}
+
+
+type Book{
+	isn: String 
+	title: String
+	publisher: String
+	authors: [String]
+	publishedDate: String
+}
