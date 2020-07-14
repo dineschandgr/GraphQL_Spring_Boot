@@ -37,21 +37,25 @@ Generally, GraphQL is used to query data as the data modification is done in the
 sample post request body
 
 #returns only the 3 fields for allBooks query
+
 ```json
 allBooks{
         title
         publishedDate
         authors
 }
-
+```
 #returns only the 1 field for book query based on bookid
+```json
 {
     book(id:"123"){
         title
     }
 }
+```
 
 #returns only the 3 fields for book query based on bookid
+```json
 {
     book(id:"123"){
         title
@@ -59,8 +63,10 @@ allBooks{
         authors
     }
 }
+```
 
 #returns both the queries in a single response
+```json
 {
     allBooks{
         title
@@ -73,5 +79,5 @@ allBooks{
         authors
     }
 }
-
+```
 
