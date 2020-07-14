@@ -38,7 +38,19 @@ sample post request body
 
 #returns only the 3 fields for allBooks query
 
-JSON
+{
+    "one": 2,
+    "three": {
+        "point_1": "point_2",
+        "point_3": 3.4
+    },
+    "list": [
+        "one",
+        "two",
+        "three"
+    ]
+}
+
 allBooks{
         title
         publishedDate
