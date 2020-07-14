@@ -37,6 +37,8 @@ Generally, GraphQL is used to query data as the data modification is done in the
 sample post request body
 
 #returns only the 3 fields for allBooks query
+
+JSON
 allBooks{
         title
         publishedDate
