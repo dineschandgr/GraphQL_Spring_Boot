@@ -4,14 +4,14 @@ GraphQL implementation using Spring Boot
 This source code only implements the GraphQL query and not the mutation.
 Generally, GraphQL is used to query data as the data modification is done in the Database using other APIs
 
-#Preqequisute
+**Preqequisute**
 
 1. Download the following jars. Spring boot will run GraphQL server internally
 		    graphql-spring-boot-starter		    
 		    graphql-java-tools
  2. Download a database like HSql to load data and GraphQL will retrieve data from that       
  
-#Notes
+**Notes**
 - server-side technology
 - a query language for API
 - an advanced version of REST
@@ -20,7 +20,7 @@ Generally, GraphQL is used to query data as the data modification is done in the
 - fetch only the required data
 - single rest endpoint for all clients and clients can choose what data they need
 
-#Steps 
+**Steps**
 1. Create a .graphql file to define the schema,query, mutation and the Entity
 		 
 2. in GraphQLService.java, 
